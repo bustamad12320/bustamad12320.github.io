@@ -1,92 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box}
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> David B Portfolio</title>
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudfare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <header>
+        <div class="logo">
+          <img src="media/bio.jpg" alt="">
+        </div>  
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Contact Info</a></li>
+          </ul>
+        </nav>
+    </header>
 
-/* Set height of body and the document to 100% */
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
-}
-
-/* Style tab links */
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
-}
-
-.tablink:hover {
-  background-color: #777;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
-}
-
-#Home {background-color: red;}
-#Projects {background-color: green;}
-#Contact {background-color: blue;}
-</style>
-</head>
-<body>
-
-<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-<button class="tablink" onclick="openPage('Projects', this, 'green')" id="defaultOpen">Projects</button>
-<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-
-<div id="Home" class="tabcontent">
-  <h3>Home</h3>
-  <p>Home is where the heart is..</p>
-  <img src="./bio_pic.jpg"
-       width="300"
-       height="500"/>
-</div>
-
-<div id="Projects" class="tabcontent">
-  <h3>News</h3>
-  <p>Some news this fine day!</p> 
-</div>
-
-<div id="Contact" class="tabcontent">
-  <h3>Contact</h3>
-  <p>Get in touch, or swing by for a cup of coffee.</p>
-</div>
-
-<script>
-function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-
-
-   
-</body>
-</html> 
-    
+    <!-- Has all the intro info/landing page-->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am David <strong> David b </strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">full-stack dev</p>
+        <img src="media/bio.jpg" alt="a picture of me">
+    </section>
+        
+  </body>
+</html>
