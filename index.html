@@ -9,6 +9,7 @@
         <link rel="stylesheet"
         href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
@@ -20,21 +21,53 @@
         </button>
         <nav class="nav">
           <ul class="nav__list">
-              <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Contact Info</a></li>
+              <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
           </ul>
         </nav>
     </header>
 
-    <!-- Has all the intro info/landing page-->
+    <!-- Has all the intro info/landing page this whole section is all the html for the landing page-->
     <section class="intro" id="home">
-        <h1 class="section__title section__title--intro">
-            Hi, I am David <strong> David b </strong>
-        </h1>
-        <p class="section__subtitle section__subtitle--intro">full-stack dev</p>
-        <img src="media/bio.jpg" alt="a picture of me">
-    </section>
+        <h2 class="section__title section__title--intro">
+            Hi, I am <strong> David b </strong>
+        </h2>
+        <div class="gallery">
+            <div class="gallery">
+              <h3>IMG</h3>
+              <img src="media/bio.jpg" alt="a picture of me">
+            </div>
+            <div class="gallery">
+              <h3>VIDEO</h3>
+              <img src="media/bio.jpg" alt="a picture of me">
+            </div>
+            <div class="gallery">
+              <h3>TEXT</h3>
+              <img src="media/bio.jpg" alt="a picture of me">
+            </div>
+        </div>
         
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- My work and projects-->
+    <section class="my-projects" id="projects">
+        <h2 class="section__title">My Projects</h2>
+        <p class="section__subtitle"></p>
+
+        <div class="portfolio">
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+      <a href="mailto:bustamad@purdue.edu" class="footer__link">bustamad@purdue.edu</a>
+      <ul class="social-list">
+          <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">a</a></li>
+          <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">a</a></li>
+          <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">a</a></li>
+          <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">a</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
