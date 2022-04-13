@@ -82,31 +82,27 @@ strong {font-weight: var(--fw-bold)}
 */
 
 .btn {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h3);
     text-decoration: none;
     width: fit-content;
-    padding: 20px 20px;
+    padding: 5px 25px;
     color: var(--clr-dark);
-    font-size: 14px;
+    font-size: 24px;
     font-family: var(--ff-secondary);
     text-transform: uppercase;
     transition: 0.5s;
     letter-spacing: 4px;
     cursor: pointer;
-    background-color: var(--clr-neon);
-    color: #050801;
-    box-shadow: 0 0 5px var(--clr-neon),
-                0 0 25px var(--clr-neon),
-                0 0 50px var(--clr-neon),
-                0 0 200px var(--clr-neon); 
+    color: white;
 }
 
 .btn:hover {
-    background-color: var(--clr-neon);
-    color: #050801;
-    box-shadow: 0 0 5px var(--clr-neon),
-                0 0 25px var(--clr-neon),
-                0 0 50px var(--clr-neon),
-                0 0 200px var(--clr-neon); 
+    box-shadow: 0 0 5px var(--clr-light),
+    0 0 25px var(--clr-light),
+    0 0 50px var(--clr-light),
+    0 0 200px var(--clr-light); 
+    color: var(--clr-accent);
 }
 
 
