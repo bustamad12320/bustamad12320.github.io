@@ -336,3 +336,9 @@ header {
 .menu::before {top:20px;}
 .menu::after {bottom: 20px;}
 
+/* Portfolio Items */
+.portfolio__item{
+    text-decoration: none;
+    font-family: var(--ff-secondary);
+    color: var(--clr-dark);
+}
