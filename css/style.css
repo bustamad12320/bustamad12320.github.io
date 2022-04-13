@@ -14,6 +14,9 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
+    --clr-neon:#228b22;
+    --clr-sharp:#ec5800;
+    --clr-silver:#acacac;
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -57,12 +60,12 @@ strong {font-weight: var(--fw-bold)}
 }
 
 /* Buttons */
-
+/*
 .btn {
     display: inline-block;
     padding: .5em 2.5em;
-    background: var(--clr-accent);
-    color: var(--clr-dark);
+    background: var(--clr-silver);
+    color: var(--clr-neon);
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -74,6 +77,36 @@ strong {font-weight: var(--fw-bold)}
 
 .btn:hover {
     transform: scale(1.1);
+}
+
+*/
+
+.btn {
+    text-decoration: none;
+    width: fit-content;
+    padding: 20px 20px;
+    color: var(--clr-dark);
+    font-size: 14px;
+    font-family: var(--ff-secondary);
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    cursor: pointer;
+    background-color: var(--clr-neon);
+    color: #050801;
+    box-shadow: 0 0 5px var(--clr-neon),
+                0 0 25px var(--clr-neon),
+                0 0 50px var(--clr-neon),
+                0 0 200px var(--clr-neon); 
+}
+
+.btn:hover {
+    background-color: var(--clr-neon);
+    color: #050801;
+    box-shadow: 0 0 5px var(--clr-neon),
+                0 0 25px var(--clr-neon),
+                0 0 50px var(--clr-neon),
+                0 0 200px var(--clr-neon); 
 }
 
 
@@ -221,12 +254,12 @@ footer {
     font-weight: var(--fw-bold);
     margin-bottom: 1em;
 }
-
+/*
 .portfolio {
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 }
-
+*/
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
@@ -236,6 +269,9 @@ footer {
     transition: 
     transform 750ms cubic-bezier(.5,0,.5,1),
     opacity 250ms linear;
+    height: 400px;
+    width: 500px;
+
 }
 
 .portfolio__img:hover {
@@ -355,4 +391,39 @@ header {
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
+}
+
+
+/*Experimental button stuff for projects*/
+
+.portfolio {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    'portfolio__item1 portfolio__item2 portfolio__item3'
+    'button1 button2 button3 '
+}
+
+
+
+.portfolio__item1{
+    grid-area: portfolio__item1;
+}
+.portfolio__item2{
+    grid-area: portfolio__item2;
+}
+.portfolio__item3{
+    grid-area: portfolio__item3;
+}
+
+.button1{
+    grid-area: button1;
+}
+.button2{
+    grid-area: button2;
+}
+.button3{
+    grid-area: button3;
 }
